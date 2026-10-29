@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f3d34">
+  <meta name="description" content="Jasdeep Sandhu is a University of Guelph accounting graduate with experience in financial systems research, accounting controls, data analysis, accessible technology testing, and customer operations.">
+  <meta property="og:title" content="Jasdeep Sandhu | Accounting, Systems &amp; Accessibility">
+  <meta property="og:description" content="Selected work in accounting controls, Excel analysis, finance technology research, and digital accessibility.">
+  <meta property="og:type" content="website">
+  <title>Jasdeep Sandhu | Accounting, Systems &amp; Accessibility</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #152f3e;
+      --ink-soft: #435762;
+      --navy: #0f3d34; /* deep green, replaces navy */
+      --navy-2: #1a5246;
+      --paper: #f5f8f6;
+      --white: #ffffff;
+      --light: #eff4f1;
+      --border: #d5dfdb;
+      --green: #155e52;
+      --green-dark: #0c443c;
+      --mint: #cde8d7;
+      --orange: #dba977;
+      --focus: #a84f0d;
+      --accent-line: #3a8a75;
+      --max: 1120px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: auto; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 1rem; line-height: 1.65; }
+    h1, h2, h3, p, ul, dl { margin-top: 0; }
+    h1, h2, h3 { line-height: 1.16; letter-spacing: -.025em; }
+    p { max-width: 73ch; }
+    a { color: var(--green-dark); text-underline-offset: .23em; text-decoration-thickness: .09em; }
+    a:hover { color: #07342d; text-decoration-thickness: .15em; }
+    a:focus-visible { outline: 3px solid var(--focus); outline-offset: 5px; border-radius: 2px; }
+    .container { width: min(var(--max), calc(100% - 3rem)); margin-inline: auto; }
+    .skip-link { position: absolute; z-index: 99; inset: .75rem auto auto .75rem; padding: .8rem 1rem; background: #ffffff; color: #122e3b; border: 3px solid #a84f0d; border-radius: .35rem; transform: translateY(-180%); }
+    .skip-link:focus { transform: translateY(0); }
+    .masthead { background: var(--navy); color: #fff; border-bottom: 4px solid var(--accent-line); }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-block: 1.4rem; border-bottom: 1px solid rgba(255,255,255,.22); }
+    .wordmark { color: #fff; font-size: 1.05rem; font-weight: 780; line-height: 1.3; text-decoration: none; white-space: nowrap; }
+    .wordmark span { display: inline-flex; align-items: center; justify-content: center; width: 2.15rem; height: 2.15rem; margin-right: .55rem; border: 1px solid #88c9bb; border-radius: .45rem; color: #dcf5e8; letter-spacing: -.05em; }
+    .wordmark:hover, .site-nav a:hover { color: #e4f5ed; }
+    .site-nav ul { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: .35rem 1.2rem; padding: 0; margin: 0; list-style: none; }
+    .site-nav a { display: inline-block; padding: .35rem .12rem; color: #ecf4f2; font-size: .93rem; font-weight: 650; text-decoration: none; }
+    .site-nav a:focus-visible, .masthead a:focus-visible { outline-color: #f4c384; }
+    .hero { position: relative; overflow: hidden; padding-block: clamp(3.4rem, 7vw, 6.7rem) clamp(4rem, 7vw, 6.4rem); }
+    .hero::after { position: absolute; pointer-events: none; z-index: 0; content: ""; width: 580px; height: 580px; border: 1px solid rgba(197,227,218,.16); border-radius: 50%; right: -240px; top: -210px; box-shadow: 0 0 0 75px rgba(197,227,218,.035), 0 0 0 155px rgba(197,227,218,.027); }
+    .hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(260px, .8fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; }
+    .eyebrow { margin-bottom: 1.1rem; color: #c4ebd9; font-size: .79rem; font-weight: 780; text-transform: uppercase; letter-spacing: .15em; }
+    .hero h1 { margin-bottom: .75rem; color: #ffffff; font-size: clamp(3.5rem, 7.1vw, 6.1rem); letter-spacing: -.063em; }
+    .hero .lead { color: #e8eee8; font-size: clamp(1.25rem, 2.2vw, 1.68rem); font-weight: 600; line-height: 1.4; letter-spacing: -.02em; max-width: 26ch; }
+    .hero .description { margin-block: 1.35rem 1.8rem; max-width: 57ch; color: #e0e8e4; font-size: 1.03rem; line-height: 1.78; }
+    .actions { display: flex; gap: .8rem; flex-wrap: wrap; }
+    .button-link { display: inline-flex; align-items: center; justify-content: center; padding: .77rem 1.14rem; border: 2px solid transparent; border-radius: .42rem; min-height: 3rem; font-size: .97rem; font-weight: 730; text-decoration: none; }
+    .button-primary { background: #d2eadb; color: #123b34; }
+    .button-primary:hover { background: #fff; color: #123b34; }
+    .button-secondary { border-color: #86b7a9; color: #f3f8f5; }
+    .button-secondary:hover { color: #152f3e; background: #fff; border-color: #fff; }
+    .hero-note { background: rgba(255,255,255,.065); border: 1px solid rgba(222,242,232,.33); border-radius: .85rem; padding: clamp(1.25rem, 3vw, 2rem); backdrop-filter: none; }
+    .hero-note .label { color: #bfe4d4; font-size: .79rem; font-weight: 800; text-transform: uppercase; letter-spacing: .11em; }
+    .hero-note p { margin: .45rem 0 1.65rem; font-size: 1.05rem; color: #eef6f1; }
+    .hero-note p:last-child { margin-bottom: 0; }
+    .hero-note strong { display: block; color: #fff; font-size: 1.22rem; font-weight: 770; }
+    .hero-note .separate { border-top: 1px solid rgba(222,242,232,.2); padding-top: 1.4rem; }
+    main { display: block; }
+    .impact { background: #eaf2ed; border-bottom: 1px solid #cadbd2; }
+    .impact-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1.8rem; padding-block: 2.15rem; }
+    .impact-item + .impact-item { border-left: 1px solid #c4d6cd; padding-left: 1.8rem; }
+    .impact-item strong { display: block; color: #104c42; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.1rem, 4vw, 2.9rem); font-weight: 700; line-height: 1; letter-spacing: -.05em; }
+    .impact-item p { margin: .6rem 0 0; font-size: .92rem; line-height: 1.5; color: #334f50; }
+    .section { padding-block: clamp(3.9rem, 7vw, 6.2rem); }
+    .section-heading { display: flex; gap: 1.5rem; align-items: end; justify-content: space-between; margin-bottom: 2.1rem; }
+    .section-kicker { margin-bottom: .65rem; color: #155e52; font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .15em; }
+    .section-heading h2, .section-title { font-size: clamp(2.08rem, 4vw, 3.1rem); margin-bottom: .7rem; }
+    .section-intro { max-width: 68ch; color: var(--ink-soft); font-size: 1.04rem; }
+    .section-heading .section-intro { margin-bottom: 0; }
+    .work-grid { display: grid; gap: 1.3rem; }
+    .case { overflow: hidden; display: grid; grid-template-columns: minmax(210px, .37fr) minmax(0, 1fr); background: #fff; border: 1px solid var(--border); border-radius: .85rem; box-shadow: 0 5px 22px rgba(12,39,40,.045); }
+    .case-aside { padding: 2.1rem 1.8rem; background: #e3eeea; border-right: 1px solid #d0e0d9; }
+    .case:nth-child(2) .case-aside { background: #e9f1ec; }
+    .case:nth-child(3) .case-aside { background: #e4efeb; }
+    .case-number { font: 700 3.5rem/1 Georgia,"Times New Roman",serif; color: #165f52; letter-spacing: -.07em; margin-bottom: 2.3rem; }
+    .case:nth-child(3) .case-number { color: #1f5a4e; }
+    .case-label { color: #2c5e54; font-size: .76rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 800; }
+    .case-org { margin: .55rem 0 .9rem; font-weight: 730; line-height: 1.38; }
+    .case-meta { color: #425967; font-size: .91rem; }
+    .case-body { padding: clamp(1.65rem, 3.8vw, 2.6rem); min-width: 0; }
+    .case-body h3 { margin-bottom: .9rem; max-width: 25ch; font-size: clamp(1.56rem, 2.65vw, 2.1rem); }
+    .case-body > p { color: #425562; margin-bottom: 1.5rem; }
+    .case-details { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1.2rem; }
+    .case-details div { border-top: 2px solid #c4dcd1; padding-top: .9rem; }
+    .case-details dt { margin-bottom: .45rem; color: #124d42; font-size: .82rem; text-transform: uppercase; font-weight: 820; letter-spacing: .07em; }
+    .case-details dd { margin: 0; color: #364b55; font-size: .94rem; line-height: 1.63; }
+    .case-details .doc-link { display: block; margin-top: .7rem; }
+    .case-details .doc-link a { font-weight: 650; }
+    .case-footer { padding-top: 1.35rem; margin-top: 1.3rem; border-top: 1px solid #e0e9e3; font-size: .87rem; color: #5a6770; }
+    .light-section { background: #fff; border-block: 1px solid #e1e8e2; }
+    .about-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(230px, .58fr); gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+    .about-copy p { font-size: 1.07rem; color: #385160; }
+    .about-copy p:last-child { margin-bottom: 0; }
+    .about-panel { background: var(--light); border-left: 4px solid #257364; padding: 1.65rem; }
+    .about-panel h3 { font-size: 1.04rem; letter-spacing: 0; margin-bottom: 1rem; }
+    .about-panel ul { margin-bottom: 0; padding-left: 1.2rem; }
+    .about-panel li + li { margin-top: .65rem; }
+    .experience-list { border-top: 1px solid var(--border); }
+    .experience-item { display: grid; grid-template-columns: minmax(180px,.36fr) minmax(0,1fr); gap: 1.2rem 3rem; padding-block: 1.65rem; border-bottom: 1px solid var(--border); }
+    .experience-item h3 { font-size: 1.3rem; margin-bottom: .32rem; }
+    .experience-meta { color: #52656b; font-size: .92rem; }
+    .experience-item p { margin-bottom: .5rem; color: #394d57; }
+    .experience-item p:last-child { margin-bottom: 0; }
+    .role-category { display: block; color: #126050; font-size: .79rem; font-weight: 820; text-transform: uppercase; letter-spacing: .095em; margin-bottom: .65rem; }
+    .skills-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.1rem; }
+    .skills-card { min-width: 0; border: 1px solid var(--border); border-radius: .7rem; background: #fff; padding: 1.55rem 1.4rem; }
+    .skills-card h3 { margin-bottom: .9rem; color: #183f3b; font-size: 1.16rem; }
+    .skills-card ul { padding-left: 1.1rem; margin-bottom: 0; }
+    .skills-card li { padding-left: .2rem; margin-bottom: .48rem; color: #3c5360; }
+    .education-section { background: #edf3ee; border-top: 1px solid #dbe7de; }
+    .education-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0,1fr); gap: clamp(1.5rem, 5vw, 5rem); }
+    .degree { border-top: 2px solid #227466; padding-top: 1.2rem; }
+    .degree h3 { margin-bottom: .45rem; font-size: 1.55rem; }
+    .degree p { margin-bottom: .85rem; }
+    .degree .gpa { color: #104f44; font-size: 1.08rem; font-weight: 770; }
+    .credentials { border-top: 2px solid #227466; padding-top: 1.2rem; }
+    .credentials h3 { font-size: 1.48rem; }
+    .credentials ul { padding-left: 1.2rem; }
+    .credentials li { margin-bottom: .57rem; }
+    .contact-section { background: var(--navy); color: #f6faf6; border-top: 4px solid var(--accent-line); }
+    .contact-section .section-kicker { color: #c3e9d5; }
+    .contact-section .section-title { color: #fff; }
+    .contact-section p { color: #dce8e3; font-size: 1.06rem; }
+    .contact-grid { display: flex; flex-wrap: wrap; gap: 1.3rem 2.6rem; margin: 2rem 0 0; }
+    .contact-grid div { min-width: 0; }
+    .contact-grid dt { font-size: .79rem; color: #c4e3d4; text-transform: uppercase; font-weight: 780; letter-spacing: .11em; margin-bottom: .3rem; }
+    .contact-grid dd { margin: 0; overflow-wrap: anywhere; }
+    .contact-grid a { color: #fff; font-weight: 650; }
+    .contact-grid a:hover { color: #ccecd9; }
+    .contact-grid a:focus-visible { outline-color: #f4c384; }
+    footer { background: #0a2e27; color: #d7e2df; font-size: .87rem; border-top: 1px solid rgba(255,255,255,.14); }
+    .footer-row { padding-block: 1.2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    footer p { margin: 0; }
+    footer a { color: #e6f5ef; }
+    @media (max-width: 850px) {
+      .hero-inner, .about-layout { grid-template-columns: 1fr; }
+      .hero-note { max-width: 620px; }
+      .case { grid-template-columns: 1fr; }
+      .case-aside { display: grid; grid-template-columns: auto minmax(0,1fr); gap: .1rem 1.5rem; align-items: center; padding: 1.15rem 1.5rem; border-right: 0; border-bottom: 1px solid #d0e0d9; }
+      .case-number { grid-row: 1 / span 3; margin: 0; font-size: 2.65rem; }
+      .case-org { margin: .1rem 0; }
+      .case-meta { margin: 0; }
+    }
+    @media (max-width: 640px) {
+      .container { width: min(var(--max), calc(100% - 2rem)); }
+      .topbar { align-items: flex-start; flex-direction: column; gap: .8rem; }
+      .site-nav ul { justify-content: flex-start; gap: .2rem .95rem; }
+      .site-nav a { padding: .25rem .05rem; }
+      .hero { padding-block: 3.1rem 3.2rem; }
+      .hero h1 { font-size: clamp(2.75rem, 12vw, 4.6rem); }
+      .hero::after { right: -460px; }
+      .impact-grid { grid-template-columns: 1fr; gap: 1.2rem; padding-block: 1.5rem; }
+      .impact-item + .impact-item { padding: 1rem 0 0; border-left: 0; border-top: 1px solid #c4d6cd; }
+      .impact-item strong { font-size: 2.3rem; }
+      .case-details, .skills-grid, .education-grid { grid-template-columns: 1fr; }
+      .case-details { gap: .95rem; }
+      .case-details div { padding-top: .65rem; }
+      .experience-item { grid-template-columns: 1fr; gap: .4rem; }
+      .section { padding-block: 3.2rem; }
+      .footer-row { flex-direction: column; align-items: flex-start; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
+    }
+    @media print {
+      :root { --paper: #fff; }
+      * { box-shadow: none !important; }
+      body { color: #111; background: #fff; }
+      .masthead, .contact-section, footer { background: #fff; color: #111; }
+      .hero .lead, .hero .description, .hero-note p, .hero-note strong, .contact-section p, .contact-grid a, .eyebrow, .site-nav a, .wordmark, .contact-section .section-title { color: #111; }
+      .hero-note { display: none; }
+      .topbar nav { display: none; }
+      .case { break-inside: avoid; }
+      a { color: #111; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="masthead" id="top">
+    <div class="container topbar">
+      <a class="wordmark" href="#top" aria-label="Jasdeep Sandhu, back to top"><span aria-hidden="true">JS</span> Jasdeep Sandhu</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <div class="container hero-inner">
+        <div>
+          <h1>Jasdeep<br>Sandhu</h1>
+          <p class="eyebrow">Accounting Graduate · Milton, Ontario</p>
+          <p class="lead">Financial Insight. Reliable Operations. Accessible Technology.</p>
+          <p class="description">I combine accounting knowledge with financial systems research, Excel analysis, accessibility testing and customer-facing experience. My work focuses on making information more accurate, processes more dependable and technology easier to use.</p>
+          <div class="actions">
+            <a class="button-link button-primary" href="#projects">Explore selected projects</a>
+            <a class="button-link button-secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <aside class="hero-note" aria-label="Professional snapshot">
+          <div>
+            <span class="label">Education</span>
+            <strong>Bachelor of Commerce</strong>
+            <p>Accounting · University of Guelph<br>3.7 / 4.0 GPA</p>
+          </div>
+          <div class="separate">
+            <span class="label">Core Strengths</span>
+            <strong>Analysis + Controls</strong>
+            <p>Financial records, process documentation, software evaluation and business operations.</p>
+          </div>
+          <div class="separate">
+            <span class="label">Additional Expertise</span>
+            <strong>Accessibility in Practice</strong>
+            <p>Hands-on JAWS and VoiceOver testing, assistive technology support and user instruction.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <div class="impact">
+      <div class="container impact-grid">
+        <div class="impact-item"><strong>6</strong><p>Cloud accounting options evaluated during a regional nonprofit internship.</p></div>
+        <div class="impact-item"><strong>1,498</strong><p>Invoice records assessed in a university group data analytics assignment.</p></div>
+        <div class="impact-item"><strong>18</strong><p>Benefits-platform tasks tested with VoiceOver; three barriers documented.</p></div>
+      </div>
+    </div>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Evidence of Work</p>
+            <h2 id="projects-title">Selected Projects</h2>
+            <p class="section-intro">Three projects that show how I help organizations keep financial information accurate and make services easier to use. I wrote rules a nonprofit can follow to approve payments, match its bank records and keep proper files; set up checks in Excel to catch errors such as missing or negative values in sales data; and worked through 18 set tasks on a disability benefits website with a screen reader, software that reads the screen aloud, to find where users could get stuck.</p>
+          </div>
+        </div>
+        <div class="work-grid">
+          <article class="case" aria-labelledby="case-one-title">
+            <div class="case-aside">
+              <div class="case-number" aria-hidden="true">01</div>
+              <span class="case-label">Finance Systems &amp; Controls</span>
+              <p class="case-org">CNIB / CCB Eye Care Caribbean</p>
+              <p class="case-meta">Internship · 2026</p>
+            </div>
+            <div class="case-body">
+              <h3 id="case-one-title">Modernizing Accounting Guidance for a Regional Nonprofit</h3>
+              <p>Developed a review-ready accounting-guidelines draft and researched cloud accounting migration options for a regional organization operating across Caribbean jurisdictions.</p>
+              <dl class="case-details">
+                <div><dt>Challenge</dt><dd>Update older payment and recordkeeping guidance for modern electronic workflows while accounting for different legal, donor and operational requirements.</dd></div>
+                <div><dt>My Approach</dt><dd>Drafted controls covering approvals, bank reconciliation, grant tracking, documentation and access. Compared accounting platforms on migration, reporting, cost, security and screen-reader usability.</dd></div>
+                <div><dt>Deliverables</dt><dd>Proposed a framework spanning ten financial-control areas and prepared a decision report recommending QuickBooks Online for initial evaluation, with Zoho Books as a value-oriented alternative.</dd></div>
+              </dl>
+              <p class="case-footer"><strong>Tools and methods:</strong> accounting policy research, financial-control analysis, cloud software comparison, JAWS and VoiceOver testing. Recommendations were prepared for organizational review.</p>
+            </div>
+          </article>
+
+          <article class="case" aria-labelledby="case-two-title">
+            <div class="case-aside">
+              <div class="case-number" aria-hidden="true">02</div>
+              <span class="case-label">Excel &amp; Data Quality</span>
+              <p class="case-org">University of Guelph</p>
+              <p class="case-meta">Group Coursework · 2022</p>
+            </div>
+            <div class="case-body">
+              <h3 id="case-two-title">From Raw Invoices to Defensible Sales Analysis</h3>
+              <p>Worked with classroom data covering 1,498 sales invoices and customer accounts to examine data quality, revenue patterns and receivables.</p>
+              <dl class="case-details">
+                <div><dt>Challenge</dt><dd>Incorrect invoice identifiers, missing salesperson information, unusual quantities and invalid prices could distort reported results.</dd></div>
+                <div><dt>My Approach</dt><dd>Applied spreadsheet checks for blank values, data types, outliers and negative prices. Analyzed sales by representative and organized customer information by region and product demand.</dd></div>
+                <div><dt>Deliverables</dt><dd>Categorized and analyzed customer account information. Reviewed seven questionable invoice records and documented findings. Created sales summaries, analysis reports, and visualizations.</dd></div>
+              </dl>
+              <p class="case-footer"><strong>Tools and methods:</strong> Microsoft Excel, filtering, data validation checks, outlier analysis and summary charts. Completed as a university group assignment.</p>
+            </div>
+          </article>
+
+          <article class="case" aria-labelledby="case-three-title">
+            <div class="case-aside">
+              <div class="case-number" aria-hidden="true">03</div>
+              <span class="case-label">Digital Accessibility Testing</span>
+              <p class="case-org">CNIB Access Labs</p>
+              <p class="case-meta">Accessibility Testing · 2026</p>
+            </div>
+            <div class="case-body">
+              <h3 id="case-three-title">Identifying Barriers in Essential Benefits Workflows</h3>
+              <p>Tested real-world benefits-related digital services to identify obstacles that affect a screen-reader user's ability to complete important tasks independently.</p>
+              <dl class="case-details">
+                <div><dt>Challenge</dt><dd>Form controls, linked documents and navigation patterns can interrupt otherwise straightforward user journeys when operated with assistive technology.</dd></div>
+                <div><dt>My Approach</dt><dd>Completed 18 scripted tasks on Prosper Canada's Disability Benefits Compass using iPhone VoiceOver and documented where navigation or task completion became difficult.<span class="doc-link"><a href="https://disability.benefitswayfinder.org/">View the Disability Benefits Compass website</a> (built by Prosper Canada; my role was accessibility testing)</span></dd></div>
+                <div><dt>Deliverables</dt><dd>Reported three usability and accessibility issues involving province selection, PDF access and navigation. Also assessed a 16-page disability tax credit application with JAWS.</dd></div>
+              </dl>
+              <p class="case-footer"><strong>Tools and methods:</strong> VoiceOver, JAWS, task-based usability testing and issue documentation. Findings were submitted for review.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-section" id="about" aria-labelledby="about-title">
+      <div class="container about-layout">
+        <div class="about-copy">
+          <p class="section-kicker">A Little More Context</p>
+          <h2 class="section-title" id="about-title">Where Finance Meets Practical Usability</h2>
+          <p>I'm a University of Guelph accounting graduate whose experience spans financial research, process documentation, administrative work and assistive technology. I enjoy working through detailed problems: checking the quality of the underlying information, understanding the people who use a process, and presenting a practical recommendation.</p>
+          <p>My background includes researching accounting software for a nonprofit, analyzing university accounting data, supporting daily retail transactions and testing digital services with JAWS and VoiceOver. I am interested in early-career opportunities in accounting, finance operations, business support and accessibility-related work.</p>
+        </div>
+        <aside class="about-panel" aria-labelledby="about-panel-title">
+          <h3 id="about-panel-title">What I Bring to a Team</h3>
+          <ul>
+            <li>Careful handling of financial and operational records.</li>
+            <li>Clear documentation of controls, findings and next steps.</li>
+            <li>Comfort comparing software against business requirements.</li>
+            <li>Direct experience with assistive technology and customer needs.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <p class="section-kicker">Where I've Contributed</p>
+        <h2 class="section-title" id="experience-title">Experience</h2>
+        <p class="section-intro">A selection of roles showing operational reliability, applied research and service.</p>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div><span class="role-category">Volunteer · Client Service</span><h3>CNIB SmartLife</h3><p class="experience-meta"><time datetime="2026-09">Sep 2026</time> – Present</p></div>
+            <div><p>Support approximately 12 scheduled hours each week in retail operations, processing purchases with Shopify POS and maintaining transaction records. Match customers with appropriate assistive products and provide weekly one-on-one iPhone VoiceOver instruction.</p></div>
+          </article>
+          <article class="experience-item">
+            <div><span class="role-category">Internship · Financial Research</span><h3>Global Development &amp; Research Intern</h3><p class="experience-meta">CNIB / CCB Eye Care Caribbean<br><time datetime="2026-06">Jun</time> – <time datetime="2026-09">Sep 2026</time></p></div>
+            <div><p>Researched cloud accounting and migration options, drafted accounting guidance, examined internal controls and incorporated management feedback on organization-specific requirements. Evaluated screen-reader accessibility as part of the technology review.</p></div>
+          </article>
+          <article class="experience-item">
+            <div><span class="role-category">Accessibility Testing</span><h3>Accessibility Tester</h3><p class="experience-meta">CNIB Access Labs<br><time datetime="2026-08">Aug 2026</time> – Present</p></div>
+            <div><p>Test digital services with VoiceOver and JAWS, record reproducible barriers and explain their practical impact on navigation, document access and independent task completion.</p></div>
+          </article>
+          <article class="experience-item">
+            <div><span class="role-category">Administration</span><h3>Administrative Assistant</h3><p class="experience-meta">Humberwood Animal Hospital<br><time datetime="2025-09">Sep</time> – <time datetime="2025-12">Dec 2025</time></p></div>
+            <div><p>Maintained more than 30 confidential client and patient records daily, supported accurate information handling and reorganized records to help staff retrieve information more efficiently.</p></div>
+          </article>
+          <article class="experience-item">
+            <div><span class="role-category">Accessibility Fieldwork</span><h3>Accessibility Tester</h3><p class="experience-meta">University of Guelph / AccessNow<br><time datetime="2025-08">Aug 2025</time></p></div>
+            <div><p>Evaluated five outdoor-trail features with eight volunteers, documented physical accessibility barriers and contributed recommendations for more inclusive public spaces.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="section-kicker">Working Toolkit</p>
+        <h2 class="section-title" id="skills-title">Skills &amp; Technology</h2>
+        <div class="skills-grid">
+          <section class="skills-card" aria-labelledby="skill-finance"><h3 id="skill-finance">Accounting &amp; Analysis</h3><ul><li>Accounts receivable and payable concepts</li><li>Account reconciliations and invoice preparation</li><li>Microsoft Excel and pivot tables</li><li>Sales and data-quality analysis</li><li>Financial controls and recordkeeping</li></ul></section>
+          <section class="skills-card" aria-labelledby="skill-systems"><h3 id="skill-systems">Systems &amp; Operations</h3><ul><li>QuickBooks Online</li><li>Shopify POS and transaction processing</li><li>Software comparison and requirements research</li><li>Policy, procedure and report writing</li><li>Microsoft 365: Word, Outlook, Teams and OneDrive</li></ul></section>
+          <section class="skills-card" aria-labelledby="skill-access"><h3 id="skill-access">Accessibility &amp; Service</h3><ul><li>JAWS and iPhone VoiceOver</li><li>Screen-reader and usability testing</li><li>Issue documentation</li><li>Assistive technology recommendations and coaching</li><li>ZoomText and Unified English Braille</li></ul></section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <p class="section-kicker">Qualifications</p>
+        <h2 class="section-title" id="education-title">Education &amp; Recognition</h2>
+        <div class="education-grid">
+          <div class="degree"><h3>Bachelor of Commerce, Accounting</h3><p>Gordon S. Lang School of Business and Economics<br>University of Guelph · 2021–2026</p><p class="gpa">GPA: 3.7 / 4.0</p><p>Relevant studies: financial and managerial accounting, intermediate accounting, auditing, taxation, business analytics and Excel for Business.</p><p><strong>Academic recognition:</strong> Dean's Honour Roll; Data Analytics Assignment Award (2022).</p></div>
+          <div class="credentials"><h3>Certifications &amp; Training</h3><ul><li>JAWS Certification — Freedom Scientific (2026)</li><li>ZoomText Certification — Freedom Scientific (2026)</li><li>Shopify Essential Training — LinkedIn Learning (2026)</li><li>WE Grow AI Workshop: AI for Productivity — WomEconomics (2026)</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="section-kicker">Let's Connect</p>
+        <h2 class="section-title" id="contact-title">Interested in Working Together?</h2>
+        <p>I'm open to conversations about early-career accounting, finance operations, administrative support, digital accessibility testing and assistive technology roles.</p>
+        <dl class="contact-grid">
+          <div><dt>Email</dt><dd><a href="mailto:jasdeepsandhu2402@gmail.com">jasdeepsandhu2402@gmail.com</a></dd></div>
+          <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/jasdeepsandhu02">View my LinkedIn profile</a></dd></div>
+          <div><dt>Location</dt><dd>Milton, Ontario, Canada</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-row"><p>&copy; 2026 Jasdeep Sandhu. Professional portfolio.</p><p><a href="#top">Back to top</a></p></div></footer>
+</body>
+</html>
